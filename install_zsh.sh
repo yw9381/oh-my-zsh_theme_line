@@ -3,6 +3,11 @@ git --help > /dev/null 2>&1
 [ "$?" != "0" ]&& echo "Please Install git"&& exit 1
 zsh --help > /dev/null 2>&1
 [ "$?" != "0" ]&& echo "Please Install zsh"&& exit 1
+
+download_theme(){
+   wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
+}
+
 main() {
   # Use colors, but only if connected to a terminal, and that terminal
   # supports them.
@@ -77,7 +82,6 @@ main() {
     printf "${YELLOW}Found ~/.zshrc.${NORMAL} ${GREEN}Backing up to ~/.zshrc.pre-oh-my-zsh${NORMAL}\n";
     mv ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
   fi
-  wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme
   printf "${BLUE}Using the Oh My Zsh template file and adding it to ~/.zshrc${NORMAL}\n"
   cp $ZSH/templates/zshrc.zsh-template ~/.zshrc
   sed "/^export ZSH=/ c\\
@@ -104,6 +108,7 @@ main() {
       printf "${BLUE}Please manually change your default shell to zsh!${NORMAL}\n"
     fi
   fi
+  download_theme
   printf "${GREEN}"
   echo '         __                                     __   '
   echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
