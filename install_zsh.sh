@@ -5,7 +5,7 @@ zsh --help > /dev/null 2>&1
 [ "$?" != "0" ]&& echo "Please Install zsh"&& exit 1
 
 download_theme(){
-   wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
+   wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
 }
 
 main() {

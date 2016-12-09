@@ -14,7 +14,7 @@
 
 - 基于wget方式安装
 ```
-sh -c "$(wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh.sh -O -)"
+sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh.sh -O -)"
 ```
 
 - 基于curl方式安装
@@ -26,7 +26,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_lin
 
 - 基于wget方式安装
 ```
-sh -c "$(wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"
+sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"
 ```
 
 - 基于curl方式安装
