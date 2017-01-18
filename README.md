@@ -1,9 +1,11 @@
 #说明
+-----
 本主题是适用于 oh-my-zsh 的 shell 主题  
 希望尽可能的体现出更多有用的信息在你的 shell 上，在不同的信息以不同的颜色作为区分  
 如果你有更好的想法或是实现过程，欢迎 issue to me，对于一些十分有用的功能我也会不断的去更新  
 本主题基于 WTFPL 协议开源  
 #Install
+--------
 一条命令搞定 oh-my-zsh 的安装
 
 ##基于wget方式安装
@@ -22,6 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_lin
 wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme
 ```
 #如何启用本主题
+---------------
 修改家目录下.zshrc(```vim ~/.zshrc```)
 ```
 ZSH_THEME="xxxx"
@@ -30,6 +33,7 @@ ZSH_THEME="line"
 ```
 
 #信息说明
+---------
 本主题共分为两行，其中第一行为信息行，第二行为输入行  
 ##第一行
 **紫色字**部分表示的是当前的用户名及主机名  
@@ -44,6 +48,7 @@ ZSH_THEME="line"
 如果上条命令执行失败(返回值不等于0)，则光标以红色提示，如果是正确执行的命令(返回值等于0)，光标以绿色提示(如图5)  
 
 #相关截图
+---------
 主界面(图1)  
 ![images/1.png](images/1.png)  
 git信息查看(图2)  
