@@ -77,7 +77,7 @@ main() {
     printf "${YELLOW}Found ~/.zshrc.${NORMAL} ${GREEN}Backing up to ~/.zshrc.pre-oh-my-zsh${NORMAL}\n";
     mv ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
   fi
-
+  wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme
   printf "${BLUE}Using the Oh My Zsh template file and adding it to ~/.zshrc${NORMAL}\n"
   cp $ZSH/templates/zshrc.zsh-template ~/.zshrc
   sed "/^export ZSH=/ c\\
@@ -104,10 +104,6 @@ main() {
       printf "${BLUE}Please manually change your default shell to zsh!${NORMAL}\n"
     fi
   fi
-  wget -O ~/.dircolors http://114.215.113.20/linux-config/zsh/dircolors > /dev/null
-  wget -O ~/.zshrc http://114.215.113.20/linux-config/zsh/zshrc > /dev/null
-  echo "syntax on">>~/.vimrc
-
   printf "${GREEN}"
   echo '         __                                     __   '
   echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
