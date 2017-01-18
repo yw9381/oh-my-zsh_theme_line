@@ -3,7 +3,8 @@
 
 ###基于wget
 ```
-sh -c "$(wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"```
+sh -c "$(wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"
+```
 
 ###基于curl
 ```
