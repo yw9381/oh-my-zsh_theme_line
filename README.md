@@ -12,35 +12,42 @@
 ##一键安装
 如果你从未安装过oh-my-zsh, 你可以输入如下命令一键安装并启用该主题  
 
+- 从 GitHub 安装，更新源为 GitHub
+```
+sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh_github.sh -O -)"
+```
+- 从 Coding 安装，更新源为我在 Coding 的 oh-my-zsh 镜像源  
+```
+sh -c "$(wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/one_key_install_zsh_coding.sh -O -)"
+```
+
+
+或是只安装oh-my-zsh及主题，但是不启用，更新源为 GitHub
+
 - 基于wget方式安装
 ```
-sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)""
 ```
 
 - 基于curl方式安装
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-或是只安装oh-my-zsh及主题，但是不启用
-
-- 基于wget方式安装
-```
-sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"
-```
-
-- 基于curl方式安装
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh)"
-```
-
-注意： 如果你已经安装过了oh-my-zsh，请直接下载本主题启用即可
+注意： 如果你已经安装过了oh-my-zsh，请直接下载本主题启用即可 
+ 
+- 从 GitHub 下载
 ```
 wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme
 ```
+- 从 Coding 下载  
+```
+wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme  -O ~/.oh-my-zsh/themes/line.zsh-theme
+```
+
 #如何启用本主题
 ---------------
-修改家目录下.zshrc(```vim ~/.zshrc```)  
+首先确保已经下载本主题。然后修改家目录下.zshrc(```vim ~/.zshrc```)  
 ```
 ZSH_THEME="xxxx"  
 改为
