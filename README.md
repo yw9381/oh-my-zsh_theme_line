@@ -8,6 +8,10 @@
 --------
 一条命令搞定 oh-my-zsh 的安装
 
+##一键安装
+如果你从未安装过oh-my-zsh,你可以输入如下命令一键安装并启用该主题
+
+
 ##基于wget方式安装
 ```
 sh -c "$(wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/install_zsh.sh -O -)"
