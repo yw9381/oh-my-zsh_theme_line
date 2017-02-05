@@ -1,13 +1,13 @@
 #!/bin//bash
 git --help > /dev/null 2>&1
-[ "$?" != "0" ]&& echo "Please Install git"&& exit 1
+[ "$?" != "0" ]&& echo "[!!!] Please Install git"&& exit 1
 zsh --help > /dev/null 2>&1
-[ "$?" != "0" ]&& echo "Please Install zsh"&& exit 1
+[ "$?" != "0" ]&& echo "[!!!] Please Install zsh"&& exit 1
 
 download_theme(){
-  wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
-  wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/zshrc -O ~/.zshrc > /dev/null
-  wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/dircolors -O ~/.dircolors > /dev/null
+  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
+  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/zshrc -O ~/.zshrc > /dev/null
+  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/dircolors -O ~/.dircolors > /dev/null
 }
 
 main() {
@@ -65,7 +65,7 @@ main() {
     echo "Error: git is not installed"
     exit 1
   }
-  env git clone --depth=1 https://github.com/yw9381/oh-my-zsh.git $ZSH || {
+  env git clone --depth=1 https://git.coding.net/L1n3/oh-my-zsh.git $ZSH || {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
