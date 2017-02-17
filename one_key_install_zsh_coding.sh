@@ -5,9 +5,9 @@ zsh --help > /dev/null 2>&1
 [ "$?" != "0" ]&& echo "[!!!] Please Install zsh"&& exit 1
 
 download_theme(){
-  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
-  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/zshrc -O ~/.zshrc > /dev/null
-  wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/dircolors -O ~/.dircolors > /dev/null
+  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
+  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/zshrc -O ~/.zshrc > /dev/null
+  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/dircolors -O ~/.dircolors > /dev/null
 }
 
 main() {
