@@ -1,16 +1,18 @@
-#说明
+# 说明
 -----
-本主题是适用于 oh-my-zsh 的 shell 主题  
-希望尽可能的体现出更多有用的信息在你的 shell 上，在不同的信息以不同的颜色作为区分  
+本主题是适用于 oh-my-zsh 的 shell 主题，使用前请先安装`git`和`zsh`  
+对于`DEB系`，包括Debian、Ubuntu等，请执行`apt-get install zsh git -y`进行安装  
+对于`RPM系`，包括RHEL、CentOS等，请执行`yum install zsh git -y`进行安装  
+本主题旨在希望尽可能的体现出更多有用的信息在你的 shell 上，在不同的信息以不同的颜色作为区分  
 如果你有更好的想法或是实现过程，欢迎 issue to me，对于一些十分有用的功能我也会不断的去更新  
 本主题基于 WTFPL 协议开源  
 
-#Install
+# Install
 --------
 一条命令搞定 oh-my-zsh 的安装
 
-##一键安装
-如果你从未安装过oh-my-zsh, 你可以输入如下命令一键安装并启用该主题  
+## 一键安装
+如果你从未安装过`oh-my-zsh`, 你可以输入如下命令一键安装并启用该主题，注意，安装`oh-my-zsh`需要有`git`及`zsh`。 
 
 - 从 GitHub 安装，更新源为 GitHub
 ```
@@ -45,7 +47,7 @@ wget https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/line.z
 wget https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme  -O ~/.oh-my-zsh/themes/line.zsh-theme
 ```
 
-#如何启用本主题
+# 如何启用本主题
 ---------------
 首先确保已经下载本主题。然后修改家目录下.zshrc(```vim ~/.zshrc```)  
 ```
@@ -54,7 +56,7 @@ ZSH_THEME="xxxx"
 ZSH_THEME="line"
 ```
 
-#信息说明
+# 信息说明
 ---------
 本主题共分为两行，其中第一行为信息行，第二行为输入行
   
@@ -72,7 +74,7 @@ ZSH_THEME="line"
 如果上条命令执行失败(返回值不等于0)，则光标以红色提示(如图5)  
 如果是正确执行的命令(返回值等于0)，光标以绿色提示(如图5)  
 
-#相关截图
+# 相关截图
 ---------
 主界面(图1)  
 ![images/1.png](images/1.png)  
