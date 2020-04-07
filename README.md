@@ -20,7 +20,7 @@ sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh
 ```
 - 从 Gitee 安装，更新源为我在 Gitee 的 oh-my-zsh 镜像源  
 ```
-sh -c "$(wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/one_key_install_zsh_coding.sh -O -)"
+sh -c "$(wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/one_key_install_zsh_gitee.sh -O -)"
 ```
 
 
