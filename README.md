@@ -18,9 +18,9 @@
 ```
 sh -c "$(wget --no-check-certificate https://raw.githubusercontent.com/yw9381/oh-my-zsh_theme_line/master/one_key_install_zsh_github.sh -O -)"
 ```
-- 从 Coding 安装，更新源为我在 Coding 的 oh-my-zsh 镜像源  
+- 从 Gitee 安装，更新源为我在 Gitee 的 oh-my-zsh 镜像源  
 ```
-sh -c "$(wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/one_key_install_zsh_coding.sh -O -)"
+sh -c "$(wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/one_key_install_zsh_coding.sh -O -)"
 ```
 
 

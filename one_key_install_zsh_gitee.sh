@@ -5,9 +5,9 @@ zsh --help > /dev/null 2>&1
 [ "$?" != "0" ]&& echo "[!!!] Please Install zsh"&& exit 1
 
 download_theme(){
-  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
-  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/zshrc -O ~/.zshrc > /dev/null
-  wget --no-check-certificate https://coding.net/u/L1n3/p/oh-my-zsh_theme_line/git/raw/master/dircolors -O ~/.dircolors > /dev/null
+  wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/line.zsh-theme -O ~/.oh-my-zsh/themes/line.zsh-theme > /dev/null
+  wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/zshrc -O ~/.zshrc > /dev/null
+  wget --no-check-certificate https://gitee.com/L1n3/oh-my-zsh_theme_line/raw/master/dircolors -O ~/.dircolors > /dev/null
 }
 
 main() {
@@ -63,7 +63,7 @@ main() {
     echo "Error: git is not installed"
     exit 1
   }
-  env git clone --depth=1 https://git.coding.net/L1n3/oh-my-zsh.git $ZSH || {
+  env git clone --depth=1 https://gitee.com/mirrors/oh-my-zsh.git $ZSH || {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
